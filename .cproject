@@ -19,7 +19,7 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.exe.release.110046684." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.release.519613734" name="KungFu32 Tool" superClass="cdt.managedbuild.toolchain.gnu.exe.release">
 							<targetPlatform archList="all" id="cdt.managedbuild.target.gnu.platform.exe.release.1618788412" name="Release Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="cdt.managedbuild.target.gnu.platform.exe.release"/>
-							<builder buildPath="${workspace_loc:/KF32Fxxx_StdPeriph_Lib_V2.5/Release}" id="cdt.managedbuild.target.gnu.builder.exe.release.522226976" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU Make" superClass="cdt.managedbuild.target.gnu.builder.exe.release"/>
+							<builder buildPath="${workspace_loc:/KF32Fxxx_StdPeriph_Lib_V2.6/Release}" id="cdt.managedbuild.target.gnu.builder.exe.release.522226976" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU Make" superClass="cdt.managedbuild.target.gnu.builder.exe.release"/>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1495651257" name="C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
 								<option id="com.chipon32.chiponide.core.includepath.1773088911" name="Include Path(-I)" superClass="com.chipon32.chiponide.core.includepath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
@@ -35,8 +35,8 @@
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.as.release.1512019878" name="ChipON Assembler" superClass="cdt.managedbuild.tool.gnu.c.compiler.as.release">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1516105185" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.as.release.1386292315" name="ChipON Assembler" superClass="cdt.managedbuild.tool.gnu.c.compiler.as.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2033355059" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
@@ -60,24 +60,24 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.1339158333." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.304239060" name="KungFu32 Tool" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.954505900" name="Debug Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
-							<builder buildPath="${workspace_loc:/KF32Fxxx_StdPeriph_Lib_V2.5/Debug}" id="cdt.managedbuild.target.gnu.builder.exe.debug.321724404" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU Make" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
+							<builder buildPath="${workspace_loc:/KF32Fxxx_StdPeriph_Lib_V2.6/Debug}" id="cdt.managedbuild.target.gnu.builder.exe.debug.321724404" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU Make" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.268669268" name="C Linker Debug" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug">
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.153211857" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_RELS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.cc.compiler.exe.debug.1372759617" name="C Compiler Debug" superClass="cdt.managedbuild.tool.gnu.cc.compiler.exe.debug">
-								<option id="com.chipon32.chiponide.core.includepath.172165911" name="Include Path(-I)" superClass="com.chipon32.chiponide.core.includepath" valueType="includePath">
+							<tool id="cdt.managedbuild.tool.gnu.cc.compiler.exe.debug.1167394176" name="C Compiler Debug" superClass="cdt.managedbuild.tool.gnu.cc.compiler.exe.debug">
+								<option id="com.chipon32.chiponide.core.includepath.1230531647" superClass="com.chipon32.chiponide.core.includepath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${GPUTILS_EXPAND_INCLUDE_PATH}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${GPUTILS_BASIC_INCLUDE_PATH}&quot;"/>
 								</option>
-								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.653613672" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.476515880" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.as.debug.1638502065" name="ChipON Assembler" superClass="cdt.managedbuild.tool.gnu.c.compiler.as.debug">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1928346131" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.as.debug.131710973" name="ChipON Assembler" superClass="cdt.managedbuild.tool.gnu.c.compiler.as.debug">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1685905300" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>

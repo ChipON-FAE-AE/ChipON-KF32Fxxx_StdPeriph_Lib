@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>KF32Fxxx_StdPeriph_Lib_V2.5</name>
+	<name>KF32Fxxx_StdPeriph_Lib_V2.6</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -27,7 +27,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/KF32Fxxx_StdPeriph_Lib_V2.5/Debug}</value>
+					<value>${workspace_loc:/KF32Fxxx_StdPeriph_Lib_V2.6/Release}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.contents</key>

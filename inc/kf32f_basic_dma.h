@@ -2,7 +2,7 @@
   ******************************************************************************
   * 文件名  kf32f_basic_dma.h
   * 作  者  ChipON_AE/FAE_Group
-  * 版  本  V2.5
+  * 版  本  V2.6
   * 日  期  2019-11-16
   * 描  述  该文件提供了DMA模块(DMA)相关功能函数声明及相关宏定义。
   *********************************************************************
@@ -51,7 +51,7 @@ typedef struct
 //#define CHECK_DMA_ALL_PERIPH(PERIPH)    (((PERIPH) == DMA0_SFR) \
 //                                        || ((PERIPH) == DMA1_SFR))
 #define CHECK_DMA_ALL_PERIPH(PERIPH)    (((PERIPH) == ((DMA_SFRmap *)(uint32_t)0x40001600)) \
-                                        || ((PERIPH) == ((DMA_SFRmap *)(uint32_t)0x40001600)))
+                                        || ((PERIPH) == ((DMA_SFRmap *)(uint32_t)0x40001700)))
 
 /**
   * DMA通道
@@ -148,6 +148,8 @@ void DMA_Transfer_Direction_Config (DMA_SFRmap* DMAx,
                     uint32_t Channel, uint32_t Direction);
 void DMA_Transfer_Mode_Config (DMA_SFRmap* DMAx,
                     uint32_t Channel, uint32_t BlockMode);
+void DMA_Oneshot_Enable (DMA_SFRmap* DMAx,
+                                        uint32_t Channel, FunctionalState NewState);
 void DMA_Channel_Enable (DMA_SFRmap* DMAx,
                     uint32_t Channel, FunctionalState NewState);
 void DMA_Peripheral_Start_Address_Config (DMA_SFRmap* DMAx,

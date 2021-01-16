@@ -2,7 +2,7 @@
   ******************************************************************************
   * 文件名  kf32f_basic_usart.c
   * 作  者  ChipON_AE/FAE_Group
-  * 版  本  V2.5
+  * 版  本  V2.6
   * 日  期  2019-11-16
   * 描  述  该文件提供了USART模块(USART)相关的功能函数，包含：
   *          + USART模块(USART)初始化函数
@@ -895,9 +895,8 @@ USART_Infrare_Detector_Enable(USART_SFRmap* USARTx, FunctionalState NewState)
         SFR_CLR_BIT_ASM(USARTx->CTLR, USART_CTLR_IRDAEN_POS);
     }
 }
-
 /**
-  * 描述  设置USART RESGD位。
+  * 描述  设置USART RESHD位。
   * 输入  USARTx: 指向USART内存结构的指针，取值为USART0_SFR~USART8_SFR。
   *       NewState: USART 单线模式使能状态，取值为TRUE 或 FALSE。
   * 返回  无。
@@ -909,7 +908,7 @@ USART_RESHD_Enable (USART_SFRmap* USARTx, FunctionalState NewState)
     CHECK_RESTRICTION(CHECK_USART_ALL_PERIPH(USARTx));
     CHECK_RESTRICTION(CHECK_FUNCTIONAL_STATE(NewState));
 
-    /*---------------- 设置USART_CTLR寄存器SLMEN位 ----------------*/
+    /*---------------- 设置USART_CTLR寄存器RESHD位 ----------------*/
     if (NewState != FALSE)
     {
         /* 使能单线模式*/

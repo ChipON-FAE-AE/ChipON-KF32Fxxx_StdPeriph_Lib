@@ -2,7 +2,7 @@
   ******************************************************************************
   * 文件名  kf32f_basic_osc.c
   * 作  者  ChipON_AE/FAE_Group
-  * 版  本  V2.5
+  * 版  本  V2.6
   * 日  期  2019-11-16
   * 描  述  该文件提供了振荡器(OSC)外设功能函数，包含：
   *          + 振荡器(OSC)外设初始化函数
@@ -566,7 +566,6 @@ OSC_LFCK_Enable (FunctionalState NewState)
   *                     SCLK_SOURCE_EXTHF: 选择EXTHF作为系统时钟,
   *                     SCLK_SOURCE_EXTLF: 选择EXTLF作为系统时钟,
   *                     SCLK_SOURCE_PLL: 选择PLL输出作为系统时钟,
-  *                     SCLK_SOURCE_PLL:   选择PLL输出作为系统时钟,
   *                     SCLK_SOURCE_LP4M:  选择 LP4M 输出作为系统时钟
   * 返回  无。
   */
@@ -1626,6 +1625,26 @@ OSC_Get_INTLF_INT_Flag (void)
 {
     /*---------------- 设置OSC_INT寄存器ILFIF位 ----------------*/
     if (OSC_INT & OSC_INT_ILFIF)
+    {
+        /* PLL锁定 */
+        return SET;
+    }
+    else
+    {
+        /* PLL未锁定 */
+        return RESET;
+    }
+}
+/**
+  * 描述  读取LP4M中断标志。
+  * 输入  无。
+  * 返回  中断状态，0：未发生中断，1：发生中断。
+  */
+FlagStatus
+OSC_Get_LP4MIF_INT_Flag (void)
+{
+    /*---------------- 设置OSC_INT寄存器ILFIF位 ----------------*/
+    if (OSC_INT & OSC_INT_LP4MIF)
     {
         /* PLL锁定 */
         return SET;
