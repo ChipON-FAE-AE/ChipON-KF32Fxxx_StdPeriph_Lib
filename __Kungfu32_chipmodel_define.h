@@ -1,9 +1,9 @@
 /****************************************************************************************
- * 自动生成和更新的文件。不要编辑 和在这里添加代码！！！
- * 自动生成和更新的文件。不要编辑 和在这里添加代码！！！
- * 自动生成和更新的文件。不要编辑 和在这里添加代码！！！
+ * Auto File.Recreate By ChipType Change,Don't Edit And Write Code here!!!
+ * Auto File.Recreate By ChipType Change,Don't Edit And Write Code here!!!
+ * Auto File.Recreate By ChipType Change,Don't Edit And Write Code here!!!
  *
- * 部分外设、应用相关库将包含该头文件，实现型号代码差异
+ * Inlcude this File,Useful For Peripheral Or Application  ,Implement Different By ChipType 
  ****************************************************************************************/
  
 #ifndef __Kungfu32_chipmodel_define
